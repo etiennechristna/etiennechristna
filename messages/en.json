@@ -1,0 +1,98 @@
+{
+  "Meta": {
+    "title": "Christna Etienne — Computer Scientist",
+    "description": "Portfolio of Christna Etienne, computer scientist and CEO of Vunep, specializing in databases, systems, and digital platform administration."
+  },
+  "Nav": {
+    "about": "Profile",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "Hero": {
+    "available": "Open to new opportunities",
+    "titleLine1": "Christna Etienne",
+    "titleLine2": "Computer Scientist & CEO of Vunep",
+    "lead": "Computer scientist in advanced training (Bachelor's in Computer Science, software engineering training at Master's 1 level), currently pursuing a postgraduate diploma (DESS) in Information Technology at UNITECH-BRH. As CEO of Vunep, she puts her skills to work in IT support, systems administration, and digital platform operations.",
+    "contactMe": "Get in touch",
+    "viewCv": "View CV"
+  },
+  "About": {
+    "num": "01",
+    "title": "Profile",
+    "sub": "Serious, dynamic, and organized, with a focus on databases, systems, and cybersecurity.",
+    "body": "Holder of a <strong>Bachelor's in Computer Science</strong> and software engineering training equivalent to a <strong>Master's 1</strong> (Université INUKA), Christna is currently pursuing a <strong>postgraduate diploma in Information Technology</strong> at UNITECH-BRH. She has solid knowledge of databases, computer systems, networks, development tools, GIS (geographic information systems), and technical environments — gained notably through an internship at Haiti's National Center for Geospatial Information (CNIGS) and her experience as a science teacher.",
+    "stat1Value": "5+ years",
+    "stat1Label": "of computer science training",
+    "stat2Value": "3",
+    "stat2Label": "languages spoken",
+    "stat3Value": "3",
+    "stat3Label": "key professional experiences"
+  },
+  "Skills": {
+    "num": "02",
+    "title": "Skills",
+    "sub": "Databases, systems, development tools, and office software.",
+    "databases": "Databases",
+    "systems": "Systems & environments",
+    "devTools": "Development & tools",
+    "networks": "Networks & administration",
+    "gis": "GIS",
+    "office": "Office software"
+  },
+  "Experience": {
+    "num": "03",
+    "title": "Professional Experience",
+    "sub": "Company leadership, technical fieldwork, and teaching.",
+    "vunepRole": "Chief Executive Officer (CEO)",
+    "vunepOrg": "Vunep",
+    "vunepBullet1": "Strategy, market expansion, and investor relations.",
+    "vunepBullet2": "Leading a B2B/SaaS company focused on cloud, infrastructure, and security.",
+    "cnigsRole": "Intern",
+    "cnigsOrg": "National Center for Geospatial Information (CNIGS)",
+    "cnigsBullet1": "Participated in technical activities and work related to geospatial data.",
+    "cnigsBullet2": "Used specialized computing tools and software.",
+    "cnigsBullet3": "Worked in a team and followed data-processing procedures.",
+    "teachRole": "Geology Teacher",
+    "teachOrg": "Secondary school",
+    "teachBullet1": "Prepared and led technical and scientific lessons.",
+    "teachBullet2": "Supported learners and simplified complex concepts.",
+    "teachBullet3": "Organized, communicated, and tracked educational activities."
+  },
+  "Education": {
+    "num": "04",
+    "title": "Education",
+    "sub": "Academic background in computer science and software engineering.",
+    "dessTitle": "Postgraduate Diploma in Information Technology (DESS/TII)",
+    "dessOrg": "UNITECH-BRH",
+    "licenceTitle": "Bachelor's in Computer Science / Master's in Software Engineering",
+    "licenceOrg": "Université INUKA — equivalent to Master's 1",
+    "geoTitle": "Bachelor's in Geology",
+    "geoOrg": "École Nationale de Géologie Appliquée"
+  },
+  "Languages": {
+    "num": "05",
+    "title": "Languages",
+    "french": "French",
+    "creole": "Creole",
+    "english": "English",
+    "fluent": "Fluent",
+    "intermediate": "Intermediate"
+  },
+  "Contact": {
+    "num": "06",
+    "title": "Contact",
+    "sub": "Based in Port-au-Prince, Haiti — open to IT support, systems administration, and digital platform roles.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Port-au-Prince, Ouest, Haiti",
+    "cv": "Full CV",
+    "cvValue": "Download the PDF",
+    "socials": "Socials"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

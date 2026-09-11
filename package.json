@@ -1,0 +1,50 @@
+{
+  "name": "etiennechristna",
+  "version": "0.1.0",
+  "description": "Personal portfolio site for Christna Etienne, computer scientist and CEO of Vunep, specializing in databases, systems administration, and digital platform support.",
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "personal-website",
+    "computer-science",
+    "i18n"
+  ],
+  "author": "Christna Etienne <etiennechristna.ce@gmail.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etiennechristna/etiennechristna.git"
+  },
+  "bugs": {
+    "url": "https://github.com/etiennechristna/etiennechristna/issues"
+  },
+  "homepage": "https://github.com/etiennechristna/etiennechristna",
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "lucide-react": "^1.44.0",
+    "next": "16.3.4",
+    "next-intl": "^4.14.3",
+    "next-themes": "^0.4.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
