@@ -3,6 +3,7 @@ import { Mail, MapPin, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/social-icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { MobileMenu } from "@/components/mobile-menu";
 import { formatName } from "@/lib/format-name";
 
 const skillGroups = [
@@ -38,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-[var(--bg)]/90 backdrop-blur border-b border-[var(--line)]">
+      <header className="sticky top-0 z-50 bg-[var(--bg)]/90 backdrop-blur border-b border-[var(--line)] relative">
         <nav className="max-w-[1040px] mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <div className="font-heading font-extrabold text-lg tracking-tight">
             Christna<span className="text-[var(--accent)]">.</span>
@@ -61,6 +62,17 @@ export default function Home() {
             >
               {tNav("downloadCv")}
             </a>
+            <MobileMenu
+              links={[
+                { href: "#about", label: tNav("about") },
+                { href: "#skills", label: tNav("skills") },
+                { href: "#experience", label: tNav("experience") },
+                { href: "#education", label: tNav("education") },
+                { href: "#contact", label: tNav("contact") },
+              ]}
+              cvHref="/assets/christna_etienne_resume.pdf"
+              cvLabel={tNav("downloadCv")}
+            />
           </div>
         </nav>
       </header>
