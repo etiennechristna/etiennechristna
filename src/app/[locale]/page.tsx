@@ -95,6 +95,26 @@ export default function Home() {
               >
                 {tHero("viewCv")}
               </a>
+              <div className="flex items-center gap-2.5 pl-1">
+                <a
+                  href={SOCIALS.github}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  className="flex items-center justify-center w-12 h-12 rounded-full border border-[var(--line)] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <GithubIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href={SOCIALS.linkedin}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  className="flex items-center justify-center w-12 h-12 rounded-full border border-[var(--line)] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <LinkedinIcon className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="relative rounded-[20px] overflow-hidden aspect-[4/5] bg-[var(--panel)] border border-[var(--line)] max-w-[280px] mx-auto md:max-w-none">
@@ -237,11 +257,11 @@ export default function Home() {
       <footer className="border-t border-[var(--line)] py-8 max-w-[1040px] mx-auto px-6 flex justify-between flex-wrap gap-3 text-sm text-[var(--ink-soft)]">
         <span>© {new Date().getFullYear()} {formatName("Christna", "Etienne")}. {tFooter("rights")}</span>
         <div className="flex gap-4">
-          <a href={SOCIALS.github} target="_blank" rel="noopener" className="hover:text-[var(--ink)]">
-            <GithubIcon className="w-4 h-4" />
+          <a href={SOCIALS.github} target="_blank" rel="noopener" className="hover:text-[var(--accent)] transition-colors">
+            <GithubIcon className="w-5 h-5" />
           </a>
-          <a href={SOCIALS.linkedin} target="_blank" rel="noopener" className="hover:text-[var(--ink)]">
-            <LinkedinIcon className="w-4 h-4" />
+          <a href={SOCIALS.linkedin} target="_blank" rel="noopener" className="hover:text-[var(--accent)] transition-colors">
+            <LinkedinIcon className="w-5 h-5" />
           </a>
         </div>
       </footer>
