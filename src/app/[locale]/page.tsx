@@ -53,10 +53,10 @@ export default function Home() {
             <LanguageSwitcher />
             <ThemeToggle />
             <a
-              href="/assets/Christna-Etienne-CV.pdf"
+              href="/assets/christna_etienne_resume.pdf"
               target="_blank"
               rel="noopener"
-              className="hidden sm:inline-flex bg-[var(--ink)] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[var(--accent)] transition-colors"
+              className="hidden sm:inline-flex bg-[var(--primary)] text-[var(--primary-fg)] px-4 py-2 rounded-full text-sm font-semibold hover:bg-[var(--accent)] hover:text-white transition-colors"
             >
               {tNav("downloadCv")}
             </a>
@@ -82,12 +82,12 @@ export default function Home() {
             <div className="flex gap-3.5 flex-wrap">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[var(--ink)] text-white border border-[var(--ink)] hover:bg-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[var(--primary)] text-[var(--primary-fg)] border border-[var(--primary)] hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-white transition-colors"
               >
                 {tHero("contactMe")}
               </a>
               <a
-                href="/assets/Christna-Etienne-CV.pdf"
+                href="/assets/christna_etienne_resume.pdf"
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm border border-[var(--line)] hover:border-[var(--ink)] transition-colors"
@@ -227,7 +227,7 @@ export default function Home() {
             icon={<Download className="w-4 h-4" />}
             label={tContact("cv")}
             value={tContact("cvValue")}
-            href="/assets/Christna-Etienne-CV.pdf"
+            href="/assets/christna_etienne_resume.pdf"
             external
           />
         </div>
