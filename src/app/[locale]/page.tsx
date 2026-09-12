@@ -3,6 +3,7 @@ import { Mail, MapPin, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/social-icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { formatName } from "@/lib/format-name";
 
 const skillGroups = [
   { key: "databases", tags: ["MySQL", "PostgreSQL", "Oracle", "MongoDB", "Cassandra", "Redis"] },
@@ -72,7 +73,7 @@ export default function Home() {
               {tHero("available")}
             </div>
             <h1 className="font-heading text-[2rem] sm:text-[2.8rem] lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.08] mb-5">
-              {tHero("titleLine1")}
+              {formatName("Christna", "Etienne")}
               <br />
               {tHero("titleLine2")}
             </h1>
@@ -234,7 +235,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-[var(--line)] py-8 max-w-[1040px] mx-auto px-6 flex justify-between flex-wrap gap-3 text-sm text-[var(--ink-soft)]">
-        <span>© {new Date().getFullYear()} Christna Etienne. {tFooter("rights")}</span>
+        <span>© {new Date().getFullYear()} {formatName("Christna", "Etienne")}. {tFooter("rights")}</span>
         <div className="flex gap-4">
           <a href={SOCIALS.github} target="_blank" rel="noopener" className="hover:text-[var(--ink)]">
             <GithubIcon className="w-4 h-4" />
