@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/etiennechristna/etiennechristna/issues"
   },
-  "homepage": "https://github.com/etiennechristna/etiennechristna",
+  "homepage": "https://etiennechristna.com",
   "engines": {
     "node": ">=20"
   },
@@ -27,7 +27,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "lucide-react": "^1.44.0",

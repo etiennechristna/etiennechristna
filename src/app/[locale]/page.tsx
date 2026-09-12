@@ -3,6 +3,8 @@ import { Mail, MapPin, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/social-icons";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { MobileMenu } from "@/components/mobile-menu";
+import { formatName } from "@/lib/format-name";
 
 const skillGroups = [
   { key: "databases", tags: ["MySQL", "PostgreSQL", "Oracle", "MongoDB", "Cassandra", "Redis"] },
@@ -37,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-[var(--bg)]/90 backdrop-blur border-b border-[var(--line)]">
+      <header className="sticky top-0 z-50 bg-[var(--bg)]/90 backdrop-blur border-b border-[var(--line)] relative">
         <nav className="max-w-[1040px] mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <div className="font-heading font-extrabold text-lg tracking-tight">
             Christna<span className="text-[var(--accent)]">.</span>
@@ -53,13 +55,24 @@ export default function Home() {
             <LanguageSwitcher />
             <ThemeToggle />
             <a
-              href="/assets/Christna-Etienne-CV.pdf"
+              href="/assets/christna_etienne_resume.pdf"
               target="_blank"
               rel="noopener"
-              className="hidden sm:inline-flex bg-[var(--ink)] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[var(--accent)] transition-colors"
+              className="hidden sm:inline-flex bg-[var(--primary)] text-[var(--primary-fg)] px-4 py-2 rounded-full text-sm font-semibold hover:bg-[var(--accent)] hover:text-white transition-colors"
             >
               {tNav("downloadCv")}
             </a>
+            <MobileMenu
+              links={[
+                { href: "#about", label: tNav("about") },
+                { href: "#skills", label: tNav("skills") },
+                { href: "#experience", label: tNav("experience") },
+                { href: "#education", label: tNav("education") },
+                { href: "#contact", label: tNav("contact") },
+              ]}
+              cvHref="/assets/christna_etienne_resume.pdf"
+              cvLabel={tNav("downloadCv")}
+            />
           </div>
         </nav>
       </header>
@@ -72,7 +85,7 @@ export default function Home() {
               {tHero("available")}
             </div>
             <h1 className="font-heading text-[2rem] sm:text-[2.8rem] lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.08] mb-5">
-              {tHero("titleLine1")}
+              {formatName("Christna", "Etienne")}
               <br />
               {tHero("titleLine2")}
             </h1>
@@ -82,18 +95,38 @@ export default function Home() {
             <div className="flex gap-3.5 flex-wrap">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[var(--ink)] text-white border border-[var(--ink)] hover:bg-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[var(--primary)] text-[var(--primary-fg)] border border-[var(--primary)] hover:bg-[var(--accent)] hover:border-[var(--accent)] hover:text-white transition-colors"
               >
                 {tHero("contactMe")}
               </a>
               <a
-                href="/assets/Christna-Etienne-CV.pdf"
+                href="/assets/christna_etienne_resume.pdf"
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm border border-[var(--line)] hover:border-[var(--ink)] transition-colors"
               >
                 {tHero("viewCv")}
               </a>
+              <div className="flex items-center gap-2.5 pl-1">
+                <a
+                  href={SOCIALS.github}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  className="flex items-center justify-center w-12 h-12 rounded-full border border-[var(--line)] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <GithubIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href={SOCIALS.linkedin}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  className="flex items-center justify-center w-12 h-12 rounded-full border border-[var(--line)] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+                >
+                  <LinkedinIcon className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="relative rounded-[20px] overflow-hidden aspect-[4/5] bg-[var(--panel)] border border-[var(--line)] max-w-[280px] mx-auto md:max-w-none">
@@ -227,20 +260,20 @@ export default function Home() {
             icon={<Download className="w-4 h-4" />}
             label={tContact("cv")}
             value={tContact("cvValue")}
-            href="/assets/Christna-Etienne-CV.pdf"
+            href="/assets/christna_etienne_resume.pdf"
             external
           />
         </div>
       </section>
 
       <footer className="border-t border-[var(--line)] py-8 max-w-[1040px] mx-auto px-6 flex justify-between flex-wrap gap-3 text-sm text-[var(--ink-soft)]">
-        <span>© {new Date().getFullYear()} Christna Etienne. {tFooter("rights")}</span>
+        <span>© {new Date().getFullYear()} {formatName("Christna", "Etienne")}. {tFooter("rights")}</span>
         <div className="flex gap-4">
-          <a href={SOCIALS.github} target="_blank" rel="noopener" className="hover:text-[var(--ink)]">
-            <GithubIcon className="w-4 h-4" />
+          <a href={SOCIALS.github} target="_blank" rel="noopener" className="hover:text-[var(--accent)] transition-colors">
+            <GithubIcon className="w-5 h-5" />
           </a>
-          <a href={SOCIALS.linkedin} target="_blank" rel="noopener" className="hover:text-[var(--ink)]">
-            <LinkedinIcon className="w-4 h-4" />
+          <a href={SOCIALS.linkedin} target="_blank" rel="noopener" className="hover:text-[var(--accent)] transition-colors">
+            <LinkedinIcon className="w-5 h-5" />
           </a>
         </div>
       </footer>
